@@ -262,34 +262,6 @@ export default function MetroUploadForm() {
 
                     <div className="space-y-2">
                         <Label>Imagen *</Label>
-                        {/*<div className="space-y-3">
-                            <div
-                                className="border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-lg p-8 text-center hover:border-slate-400 dark:hover:border-slate-600 transition-colors cursor-pointer"
-                                onClick={() => fileInputRef.current?.click()}
-                            >
-                                <Upload className="mx-auto h-12 w-12 text-slate-400" />
-                                <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-                                    Haz clic para subir o arrastra y suelta
-                                </p>
-                                <p className="text-xs text-slate-500 dark:text-slate-500">
-                                    PNG, JPG, WEBP
-                                </p>
-                            </div>
-                            <input
-                                ref={fileInputRef}
-                                type="file"
-                                accept="image/*"
-                                onChange={handleFileChange}
-                                className="hidden"
-                                capture="environment"
-                            />
-
-                            <div className="flex items-center gap-2">
-                                <div className="flex-1 h-px bg-slate-300 dark:bg-slate-700" />
-                                <span className="text-xs text-slate-500">O</span>
-                                <div className="flex-1 h-px bg-slate-300 dark:bg-slate-700" />
-                            </div>
-                        </div>*/}
                         <Uploader onFile={handleFile} />
                         {files.length > 0 && (
                             <div className="space-y-2">
