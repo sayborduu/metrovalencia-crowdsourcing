@@ -140,10 +140,6 @@ export default function MetroUploadForm() {
         });
     };
 
-    const startCamera = () => {
-        return;
-    };
-
     const handleUploadClick = () => {
         if (files.length === 0 || !category || !stopName) {
             setError("Por favor completa todos los campos y selecciona al menos una imagen");
@@ -223,6 +219,8 @@ export default function MetroUploadForm() {
                             <SelectContent>
                                 <SelectItem value="NaviLensGo">NaviLens Go</SelectItem>
                                 <SelectItem value="Fotos">Foto de Parada</SelectItem>
+                                <SelectItem value="Señalizacion">Señalización Vias</SelectItem>
+                                <SelectItem value="EstrParadas">Estructura de Paradas<SelectItem>
                                 <SelectItem value="Otro">Otro</SelectItem>
                             </SelectContent>
                         </Select>
